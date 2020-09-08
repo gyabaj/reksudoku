@@ -10,7 +10,7 @@ private:
 
 public:
         Sudoku();
-        Sudoku(int arr[9][9]);
+        Sudoku(int *arr, int n);
         Sudoku(const Sudoku &Sud);
         ~Sudoku();
 
