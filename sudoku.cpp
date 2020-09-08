@@ -7,11 +7,14 @@
                         for (int j = 0; j < 9; ++j)
                                 arr[i][j] = 0;
         }
-        Sudoku::Sudoku(int arr[9][9])
+        Sudoku::Sudoku(int *arr,int n)
         {
-                for (int i = 0; i < 9; ++i)
-                        for (int j = 0; j < 9; ++j)
-                                this->arr[i][j] = arr[i][j];
+                if(n == 9)
+                {
+                   for (int i = 0; i < n; ++i)
+                         for (int j = 0; j < n; ++j)
+                                this->arr[i][j] = *(arr + j + (n * i));
+                }
         }
         Sudoku::Sudoku(const Sudoku &Sud)
         {
