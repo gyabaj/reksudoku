@@ -2,7 +2,6 @@
 
 int main()
 {
-
    Sudoku mySudoku{};
    mySudoku.enterDigits();
    mySudoku.solve();
