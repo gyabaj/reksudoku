@@ -12,5 +12,5 @@ public:
         ~Sudoku();
         void enterDigits();
         bool solve();
-        void print();
+        void print() const;
 };
